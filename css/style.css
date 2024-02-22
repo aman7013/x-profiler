@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700&family=Crimson+Text:wght@400;600;700&family=Mulish:wght@200;300;400;500;600;700;800&family=Yellowtail&display=swap');
+body
+{
+margin: 0;
+background-color:#E1EBF7;
+
+
+}
+img
+{
+width: 100%;
+}
+a
+{
+text-decoration: none;
+}
+h1, h2, h3, h4, .header ul li, .header_c3 table tr td, li
+{
+font-family: 'Mulish', sans-serif;
+
+}
+p, input[type=text], select, textarea, label, td
+{
+
+font-family: 'Mulish', sans-serif;
+
+}
+.button
+{
+background-image: linear-gradient(to left,#11115a, #115b6d);
+color: white;
+padding:9.8px;
+border-radius: 5px;
+padding-right:27px;
+padding-left:27px;
+margin-left: 1%;
+
+transition: background-color 0.5s;
+
+}
+.button:hover
+{
+background-image: radial-gradient(circle at 30% 86%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 55% 100%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 40% 75%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 7% 99%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 69% 76%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 2% 35%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 14% 48%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 28% 87%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 65% 14%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 51% 36%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 6% 93%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),linear-gradient(135deg, rgb(23, 233, 173),rgb(29, 24, 208));
+  
+cursor: pointer;
+
+
+}
+.button1
+{
+background-color:transparent;
+color:black;
+padding:9.8px;
+border-radius: 5px;
+padding-right:27px;
+padding-left:27px;
+margin-left: 1%;
+border: 1px solid black;
+
+transition: background-color 0.5s;
+
+}
+.button1:hover
+{
+background-image: linear-gradient(to left,#11115a, #115b6d);
+color: white;
+cursor: pointer;
+
+
+}
+.header{
+display: flex;
+font-family: Quicksand, sans-serif;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+.header_c0
+{
+flex: 5%;
+display: none;
+cursor: pointer;
+}
+.header_c0 .fa{
+ color:#BC0068;
+ font-weight: bold;
+ font-size:32px;
+}
+
+.header_c1{
+flex: 20%;
+padding:5px;
+margin-top: -1.5%;
+}
+.header_c2{
+flex: 60%;
+padding-top:1.5%;
+text-align: center;
+
+
+}
+.header_c3{
+flex: 20%;
+padding-top:1.5%;
+text-align:center;
+padding-right: 1%;
+
+
+
+}
+.header_c1 img{
+width:200px;
+
+}
+
+.header_c2 a{
+text-decoration: none;
+padding-left: 2%;
+font-size:17px;
+color: black;
+text-align: left;
+font-weight: bold;
+
+}
+.header_c2 a:hover{
+color: #E8604A;
+}
+
+.mobile
+{
+position: fixed;
+top:0;
+bottom: 0;
+background-color: white;
+left:0;
+right:0;
+z-index:999;
+padding: 1%;
+overflow: hidden;
+animation: mobilemenu 0.5s;
+display: none;
+}
+@keyframes mobilemenu
+{
+0%{transform: translateY(-100px)}
+100%{transform: translateY(0px)}
+}
+.mobile ul
+{
+list-style-type: none;
+padding-left: 12px;
+}
+.mobile ul li
+{
+line-height: 2;
+
+}
+.mobile ul li a
+{
+
+color: black;
+}
+.mobile ul li:hover
+{
+background-color:#BC0068;
+color: white;
+padding-left: 8px;
+
+}
+.mobile ul li:hover a
+{
+
+color: white;
+
+}
+.mobile h6
+{
+background-color:#BC0068;
+padding: 8px;
+color: white;
+font-size: 18px;
+margin-bottom: 0;
+
+}
+.closemenu
+{
+background-color:#BC0068;
+position: absolute;
+padding: 6px;
+padding-left: 8px;
+padding-right: 8px;
+color: white;
+border-radius: 5px;
+top:0;
+right: 0;
+margin-top: 8px;
+margin-right: 8px;
+transition: all 0.5s;
+cursor: pointer;
+}
+.closemenu:hover
+{
+background-color: red;
+}
+
+/*-----responsive header----*/
+
+@media all and (max-width : 480px)
+{
+	.header
+	{
+		
+		gap:0px;
+		padding-left: 2%;
+		padding-right: 2%;
+		
+
+	}
+	.header_c0
+	{
+		display: block;	
+		padding-top:3%;
+		font-size: 28px;
+		flex: 5%;
+
+	}
+	.header_c0 i
+	{
+		color:black;
+	}
+	.header_c1
+	{
+		flex: 15%;
+		
+		margin-left:-2%;
+		
+
+	}
+	.header_c1 img{
+		margin-top:-8%;
+	}
+	
+	.header_c2
+	{
+		display: none;
+	}
+	.header_c3
+	{
+		flex:80%;
+	
+
+		
+		
+	}
+	.header_c3 .button{
+		display: none;
+	}
+	.header_c3 .button1{
+		display: block;
+		margin-top:2%;
+		background-color:#BC0068;
+	}
+	.header_c3 .button1:hover{
+		background-color: #313041;
+        cursor: pointer;
+	}
+	
+}
+.layout{
+	display: flex;
+
+}
+
+.layout_c1{
+	flex: 100%;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background-color:rgba(0, 0, 0, 0.01);
+	position: absolute;
+	z-index:1;
+	background-image: radial-gradient(circle at 30% 86%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 55% 100%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 40% 75%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 7% 99%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 69% 76%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 2% 35%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 14% 48%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 28% 87%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 65% 14%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 51% 36%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 6% 93%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),linear-gradient(135deg, rgb(23, 233, 173),rgb(29, 24, 208));
+   
+   margin-top:6%;
+   margin-bottom:4%;
+}
+
+
+.box{
+display: flex;
+}
+.box_c1{
+flex: 100%;
+top:50%;
+  left: 50%;
+  position: absolute;
+  z-index:-1;
+  transform: translate(-50%,-50%);
+  
+  
+  padding: 1%;
+  border-radius:10px;
+ 
+
+}
+
+.box_c1 h1{
+font-family:Montserrat, sans-serif;
+font-weight:700;
+font-size:48px;
+line-height:58px;
+color:greenyellow;
+font-style:normal;
+padding-left:30%;
+margin-bottom:0;
+
+}
+
+.box_c1 h2{
+font-family:Montserrat, sans-serif;
+font-style: normal;
+font-weight:150;
+font-size:20px;
+line-height:44px;
+color:white;
+margin-top:0;
+margin-left:5%;
+
+
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+/*  border-right: .15em solid orange;*/ /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+letter-spacing: .15em; /* Adjust as needed */
+animation: 
+typing 3.5s steps(40, end),
+blink-caret .85s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+from { width:0% }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange; }
+}
+
+.box_c1 a{
+text-decoration: none;
+}
+
+
+
+.userName
+{
+padding: 6px;
+padding-left:95px;
+font-size:18px;
+
+}
+
+
+
+.box_c1 span{
+font-weight:900;
+}
+.box_c1 p{
+	text-align: center;
+}
+label
+{
+position: absolute;
+padding-top:20px;
+padding-left:50px;
+font-size:18px;
+font-weight: 100px;
+
+}
+/*
+.business
+{
+display: flex;
+gap:16px;
+margin-top:35%;
+flex-wrap:wrap;
+margin-left: 2%;
+margin-right: 2%;
+}
+
+
+.business_c1
+{
+flex:25%;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color:#1B6EC2;
+border-radius:5%;
+
+}
+.business_c1 img{
+	width:100px;
+	margin-left:30%;
+	margin-top: 2%;
+	border-radius:40%;
+}
+
+.business_c1 h3{
+	margin-left:28%;
+	font-size:20px;
+	color:white;
+}
+*/
+
+.business
+{
+display: flex;
+gap:16px;
+margin-top:28%;
+flex-wrap:wrap;
+margin-left: 2%;
+margin-right: 2%;
+position: relative;
+  height:72vh;
+}
+
+.business_c1 {
+	flex:25%;
+  text-align:center;
+  z-index: 1;
+ 
+  width: 150px;
+  height: 350px;
+margin: 0;
+ background-image: linear-gradient(to left,#11115a, #115b6d);
+  animation: animate 1s linear infinite;
+  transition:.6s;
+  
+  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+.business_c1:hover{
+   transform: rotatex(0deg);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.business_c1 img{
+  transform: translateY(15px);
+  width:100px;
+   margin-top: 2%;
+	border-radius:49%;
+}
+.business_c1 h3{
+	
+	font-size:25px;
+	color:white;
+}
+.crd1{
+	margin-top:-18%;
+}
+ 
+
+
+
+
+@media all and (max-width : 480px)
+{
+
+	.layout{
+	display: flex;
+
+}
+
+.layout_c1{
+	flex: 100%;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background-color:rgba(0, 0, 0, 0.01);
+	position: absolute;
+	z-index:1;
+	background-image: radial-gradient(circle at 30% 86%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 55% 100%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 8%,transparent 8%, transparent 92%),radial-gradient(circle at 40% 75%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 7% 99%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 69% 76%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 2% 35%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 14% 48%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),radial-gradient(circle at 28% 87%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 65% 14%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 51% 36%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),radial-gradient(circle at 6% 93%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),linear-gradient(135deg, rgb(23, 233, 173),rgb(29, 24, 208));
+   
+   margin-top:20%;
+   margin-bottom:35%;
+}
+
+
+
+	.box{
+		display: flex;
+		margin-left:10%;
+  margin-right:10%;
+	}
+	.box_c1{
+		flex:100%;
+		top:35%;
+  left: 50%;
+  right:-50%;
+  position: absolute;
+  transform: translate(-35%,-50%,40%);
+   padding: 1%;
+  border-radius:10px;
+margin-left:0%;
+margin-right:5%;
+  
+
+	}
+	.box_c1 h1{
+		font-size:30px;
+		
+
+	}
+	.box_c1 h2{
+		font-size:15px;
+		margin-left:0.1%;
+		
+	}
+	.box_c1 p{
+		margin-left:2%;
+	}
+label
+{
+position: absolute;
+padding-top:22px;
+padding-left:33px;
+font-size:18px;
+font-weight: 100px;
+}
+
+.business
+{
+display: flex;
+gap:16px;
+margin-top:75%;
+flex-wrap:wrap;
+margin-left: 2%;
+margin-right: 2%;
+
+}
+.business_c1
+{
+flex:100%;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+background-color:#1B6EC2;
+border-radius:5%;
+
+}
+.crd{
+	margin-top:-70%;
+}
+.crd1{
+	margin-top:-70%;
+}
+.business_c1 img{
+	width:100px;	
+	margin-top:3%;
+	border-radius:40%;
+}
+.business_c1 h3{
+	
+	font-size:20px;
+	color: white;
+}
+
+	
+}
+
